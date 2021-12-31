@@ -1,0 +1,28 @@
+$background-color:#0D1A2D;
+$primary-color:#15273F;
+$accent-color:#00FFF7;
+$text-color:#8BACDA;
+$white:#fff;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $background-color;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,46 @@
+.card {
+    width: 50%;
+    min-width: 18.75rem;
+    max-width: 25rem;
+    background-color: $primary-color;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1.125rem;
+
+    &__text {
+        &--title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__price {
+        border-bottom: 2px solid #2F415B;
+        padding: 0 0 1rem 0;
+        @include flex;
+
+        &--item {
+            @include flex;
+
+            &-content {
+                margin-left: 0.4rem;
+            }
+        }
+    }
+
+    &__author {
+        @include flex;
+        padding: 1rem 0 0 0;
+        &--frame {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid $white;
+
+            &-image {
+                height: 2.25rem;
+                width: 2.25rem;
+            }
+        }
+    }
+}
+

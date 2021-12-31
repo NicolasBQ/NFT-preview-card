@@ -1,0 +1,75 @@
+.card__image {
+    height: auto;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background-color: $accent-color;
+    position: relative;
+    @include transition;
+
+    &::before {
+        content: '';
+        background-image: url(../img/icon-view.svg);
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: calc(50% - 25px);
+        top: calc(50% - 25px);
+        opacity: 0;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+    &:hover &--img {
+        opacity: 0.3;
+    }
+}
+
+.disabled-card {
+    display: none;
+}
+
+.active-image {
+    display: none;
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 4rem auto;
+    height: auto;
+    box-shadow: 5px 0 10px black;
+    @include transition;
+}
+
+.active {
+    display: block;
+}
+
+.close-btn {
+    display: none;
+    cursor: pointer;
+    &__line {
+        position: fixed;
+        width: 40px;
+        height: 3px;
+        top: 2rem;
+        right: 2rem;
+        transform: rotate(45deg);
+        background: $white;
+
+        &::after {
+            content: '';
+            position: fixed;
+            width: 40px;
+            height: 3px;
+            transform: rotate(90deg);
+            background: $white;
+        }
+    }
+}
+
+.close-btn__active {
+    display: block;
+}
+

@@ -1,0 +1,49 @@
+@import './congif';
+@import './card';
+@import './image';
+
+.text {
+    font-size: 1.125rem;
+}
+
+.text-color {
+    color:$text-color;
+}
+
+.text-white {
+    color: $white;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.text-cyan {
+    color: $accent-color;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.image {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 0.75rem;
+}
+
+.section-padding {
+    padding: 1rem 0;
+}
+
+.footer {
+    text-align: center;
+}
+
+.darker {
+    background: #070F1A;
+}
