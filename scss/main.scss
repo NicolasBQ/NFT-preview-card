@@ -1,6 +1,7 @@
 @import './congif';
 @import './card';
 @import './image';
+@import './active';
 
 .text {
     font-size: 1.125rem;
@@ -42,8 +43,9 @@
 
 .footer {
     text-align: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.darker {
-    background: #070F1A;
-}

@@ -1,7 +1,7 @@
 .card__image {
     height: auto;
     cursor: pointer;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     background-color: $accent-color;
     position: relative;
     @include transition;
@@ -27,49 +27,6 @@
     }
 }
 
-.disabled-card {
-    display: none;
-}
 
-.active-image {
-    display: none;
-    width: 60%;
-    min-width: 300px;
-    max-width: 600px;
-    margin: 4rem auto;
-    height: auto;
-    box-shadow: 5px 0 10px black;
-    @include transition;
-}
 
-.active {
-    display: block;
-}
-
-.close-btn {
-    display: none;
-    cursor: pointer;
-    &__line {
-        position: fixed;
-        width: 40px;
-        height: 3px;
-        top: 2rem;
-        right: 2rem;
-        transform: rotate(45deg);
-        background: $white;
-
-        &::after {
-            content: '';
-            position: fixed;
-            width: 40px;
-            height: 3px;
-            transform: rotate(90deg);
-            background: $white;
-        }
-    }
-}
-
-.close-btn__active {
-    display: block;
-}
 
