@@ -84,7 +84,7 @@ body {
 .card__image {
   height: auto;
   cursor: pointer;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   background-color: #00FFF7;
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
@@ -110,55 +110,35 @@ body {
   opacity: 0.3;
 }
 
-.disabled-card {
-  display: none;
-}
-
-.active-image {
-  display: none;
-  width: 60%;
-  min-width: 300px;
-  max-width: 600px;
-  margin: 4rem auto;
-  height: auto;
-  -webkit-box-shadow: 5px 0 10px black;
-          box-shadow: 5px 0 10px black;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
 .active {
-  display: block;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 18.75rem;
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .close-btn {
-  display: none;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  outline: none;
   cursor: pointer;
-}
-
-.close-btn__line {
-  position: fixed;
-  width: 40px;
-  height: 3px;
-  top: 2rem;
-  right: 2rem;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background: #fff;
-}
-
-.close-btn__line::after {
-  content: '';
-  position: fixed;
-  width: 40px;
-  height: 3px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background: #fff;
-}
-
-.close-btn__active {
-  display: block;
+  font-size: 2rem;
+  background: none;
+  color: white;
 }
 
 .text {
@@ -201,9 +181,10 @@ body {
 
 .footer {
   text-align: center;
-}
-
-.darker {
-  background: #070F1A;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
