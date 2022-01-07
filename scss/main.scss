@@ -41,8 +41,9 @@
     position: fixed;
     bottom: 1rem;
     left: 50%;
-    margin-top: 3rem;
+    margin-top: 4rem;
     transform: translateX(-50%);
+    text-align: center;
 
     &__text {
         font-size: 1rem;
