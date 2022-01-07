@@ -22,6 +22,10 @@ body {
   border-radius: 1.125rem;
 }
 
+.card__text {
+  padding: 1rem 0;
+}
+
 .card__text--title {
   margin-bottom: 1rem;
 }
@@ -87,8 +91,6 @@ body {
   border-radius: 1rem;
   background-color: #00FFF7;
   position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .card__image::before {
@@ -117,6 +119,7 @@ body {
           transform: translateX(-50%);
   min-width: 18.75rem;
   z-index: 10;
+  pointer-events: none;
 }
 
 .overlay {
@@ -127,18 +130,31 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay--active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .close-btn {
   position: fixed;
-  right: 0rem;
-  top: 0rem;
+  right: 1rem;
+  top: 1rem;
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 2rem;
   background: none;
   color: white;
+  opacity: 0;
+}
+
+.close-btn--active {
+  opacity: 1;
 }
 
 .text {
@@ -175,12 +191,7 @@ body {
   border-radius: 0.75rem;
 }
 
-.section-padding {
-  padding: 1rem 0;
-}
-
 .footer {
-  text-align: center;
   position: fixed;
   bottom: 1rem;
   left: 50%;

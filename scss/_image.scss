@@ -4,7 +4,6 @@
     border-radius: 1rem;
     background-color: $accent-color;
     position: relative;
-    @include transition;
 
     &::before {
         content: '';
