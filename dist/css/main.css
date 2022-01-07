@@ -193,7 +193,7 @@ body {
 
 .footer {
   position: fixed;
-  bottom: 0.5rem;
+  bottom: 0.3rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
