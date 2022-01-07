@@ -5,25 +5,29 @@
     background-color: $accent-color;
     position: relative;
 
-    &::before {
-        content: '';
-        background-image: url(../img/icon-view.svg);
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        left: calc(50% - 25px);
-        top: calc(50% - 25px);
-        opacity: 0;
-    }
-
-    &:hover {
+    @include for-laptop-up {
         &::before {
-            opacity: 1;
+            content: '';
+            background-image: url(../img/icon-view.svg);
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+            opacity: 0;
+        }
+    
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+        &:hover &--img {
+            opacity: 0.3;
+    
         }
     }
-    &:hover &--img {
-        opacity: 0.3;
-    }
+
 }
 
 

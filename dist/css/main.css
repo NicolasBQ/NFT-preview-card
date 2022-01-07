@@ -93,23 +93,23 @@ body {
   position: relative;
 }
 
-.card__image::before {
-  content: '';
-  background-image: url(../img/icon-view.svg);
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: calc(50% - 25px);
-  top: calc(50% - 25px);
-  opacity: 0;
-}
-
-.card__image:hover::before {
-  opacity: 1;
-}
-
-.card__image:hover .card__image--img {
-  opacity: 0.3;
+@media screen and (min-width: 1000px) {
+  .card__image::before {
+    content: '';
+    background-image: url(../img/icon-view.svg);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    opacity: 0;
+  }
+  .card__image:hover::before {
+    opacity: 1;
+  }
+  .card__image:hover .card__image--img {
+    opacity: 0.3;
+  }
 }
 
 .active {
@@ -197,5 +197,9 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.footer__text {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
