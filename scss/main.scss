@@ -47,5 +47,10 @@
     &__text {
         font-size: 1rem;
     }
+
+    &__link:hover {
+        text-decoration: none;
+        color: $accent-color;
+    }
 }
 

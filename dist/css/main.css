@@ -203,4 +203,9 @@ body {
 .footer__text {
   font-size: 1rem;
 }
+
+.footer__link:hover {
+  text-decoration: none;
+  color: #00FFF7;
+}
 /*# sourceMappingURL=main.css.map */
